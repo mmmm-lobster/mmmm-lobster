@@ -63,7 +63,7 @@ def checkguess(guess):
 for i in range(1,21):
  
   guess = input("Guess a 5 letter word: ")
-  guesschecked = checkguess(guess)
+  guesschecked = checkguess(guess.lower())
   if not guesschecked[2]:
     if guesschecked[0]:
       print(f"Your word shares {guesschecked[1]} letter(s) with the word")
@@ -77,4 +77,3 @@ for i in range(1,21):
     print(f"You lost. The word was '{word}' ):")
     
 
-# print("Game Ended")
